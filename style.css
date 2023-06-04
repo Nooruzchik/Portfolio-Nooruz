@@ -1,0 +1,221 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    background-color: rgb(34, 34, 34);
+    color: white;
+}
+
+/*  шапка  */
+header {
+    background-color: rgb(34, 34, 34);
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.headerInner {
+    display: flex;
+    justify-content: space-between;
+    padding:0 10%;
+}
+
+img {
+    width: 300px;
+    height: 103px;
+}
+
+img:hover {
+    width: 600px;
+    height: 206px;
+}
+
+.name {
+    font-size: 24px;
+    color: rgb(248, 170, 0);
+    font-weight: 700;
+}
+
+nav {
+    width: 30%;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: rgb(248, 170, 0);
+}
+
+a:active {
+    font-weight: 700;
+    font-size: 18px;
+}
+
+/*  main  */
+.game {
+    width: 100%;
+    height: 100vh;
+    background: url(images/BG1.jpg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.martal{
+    width: 100%;
+    height: 100vh;
+    background: url('http://cdn02.nintendo-europe.com/media/images/10_share_images/games_15/nintendo_switch_4/H2x1_NSwitch_MortalKombat11_image1280w.jpg');
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.button {
+    width: 200px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.link{
+    
+    font-size: 30px;
+    color: #fff;
+}
+.link:hover{
+    color: #fff;
+    font-size: 30px;
+    text-decoration: none;
+}
+.link:active{
+    font-weight:900;
+    font-size: 30px;
+    text-decoration: none;
+    color: #fff;
+}
+
+
+
+.text {
+    width: 100wv;
+    height: 40vh;
+    background-color: rgb(34, 34, 34);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.movie {
+    width: 100%;
+    height: 100vh;
+    background: url(images/BG2.jpeg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/*  подвал  */
+.footerInner {
+    padding:50px 10%;
+    color: #fff;
+}
+.movie2 {
+    width: 100%;
+    height: 100vh;
+    background: url(images/download.jpg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.border-button {
+  text-decoration: none;
+  display: inline-block;
+  padding: 20px 30px;
+  margin: 10px 20px;
+  position: relative;
+  color: white;
+  border: 1px solid rgba(255, 255, 255, .4);
+  background: none;
+  font-weight: 300;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.border-button:before, .border-button:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  box-sizing: border-box;
+}
+.border-button:before {
+  bottom: 0;
+  left: 0;
+  border-left: 1px solid rgb(248, 170, 0);
+  border-top: 1px solid rgb(248, 170, 0);
+  transition: 0s ease opacity .8s, .2s ease width .4s, .2s ease height .6s;
+}
+.border-button:after {
+  top: 0;
+  right: 0;
+  border-right: 1px solid rgb(0, 0, 205);
+  border-bottom: 1px solid rgb(0, 0, 205);
+  transition: 0s ease opacity .4s, .2s ease width, .2s ease height .2s;
+}
+.border-button:hover:before, 
+.border-button:hover:after {
+  height: 100%;
+  width: 100%;
+  opacity: 1;
+}
+  
+.border-button:hover:before {
+  transition: 0s ease opacity 0s, .2s ease height, .2s ease width .2s;
+}
+.border-button:hover:after {
+  transition: 0s ease opacity .4s, .2s ease height .4s, .2s ease width .6s;
+}
+.border-button:hover {
+  background: rgba(255, 255, 255, .2);
+}
+
+
+.combination {
+    margin-top: 150px;
+    width: 100%;
+    height: 100vh;
+    background: url(images/mortal-kombat-11.jpg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
